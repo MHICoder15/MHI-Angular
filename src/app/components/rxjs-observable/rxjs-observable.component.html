@@ -1,0 +1,39 @@
+<div class="mhi-container">
+  <p>
+    <b>RxJS</b> (Reactive Extensions for JavaScript) is a JavaScript library,
+    that allow us to work with the <b>asynchronous data stream</b> with the help of <b>observables</b>. <br><br>
+
+    An Observable is like a <b>pipeline</b> through which data flows. <br>
+    It can emit <b>multiple</b> values over time, <br>
+    and you can <b>subscribe</b> to an Observable to receive these emitted values. <br><br>
+
+    An observable is <b>useless</b> until an observer subscribes to it. <br>
+    An observer is an object which <b>consumes</b> the data emitted by the observable. <br><br>
+
+    An observer keeps <b>receiving</b> data values from the observable until the observable is <b>completed</b>, <br>
+    or the observer <b>unsubscribes</b> from the observable. <br>
+  </p>
+
+  <table>
+    <thead>
+      <th>Observables</th>
+      <th>Promises</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emit <b> multiple </b>values over the period of time, Also called <b> streaming of data </b>.</td>
+        <td>Emit a <b> single </b> value at a time.</td>
+      </tr>
+      <tr>
+        <td>Are lazy: they're not executed until we <b>subscribe</b> to them using the subscribe() method.</td>
+        <td>Are not lazy: execute <b>immediately</b> after creation.</td>
+      </tr>
+      <tr>
+        <td>Have subscriptions that are <b>cancellable</b> using the unsubscribe() method.</td>
+        <td>Are <b>not cancellable</b>.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p> {{data}}</p>
+</div>
